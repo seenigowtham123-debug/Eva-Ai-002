@@ -1,0 +1,13 @@
+{
+  "appId": "ai.eva.app",
+  "appName": "Eva AI",
+  "webDir": "www",
+  "server": {
+    "url": "https://YOUR-EVA.onrender.com",
+    "cleartext": false
+  },
+  "android": {
+    "backgroundColor": "#060d16",
+    "allowMixedContent": false
+  }
+}

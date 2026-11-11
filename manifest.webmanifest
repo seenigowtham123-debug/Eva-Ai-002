@@ -1,0 +1,47 @@
+{
+  "name": "Eva AI",
+  "short_name": "Eva",
+  "description": "Chat, code, images and voice in one AI workspace",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#060d16",
+  "theme_color": "#060d16",
+  "lang": "ta",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Voice assistant",
+      "url": "./#/voice"
+    },
+    {
+      "name": "New chat",
+      "url": "./#/t/chat"
+    }
+  ]
+}

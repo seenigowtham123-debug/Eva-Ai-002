@@ -1,0 +1,21 @@
+### Open in VS Code with the "REST Client" extension, then click "Send Request".
+@host = http://localhost:3000
+# If ACCESS_TOKEN is set on the server, add:  Authorization: Bearer <token>
+
+### Health
+GET {{host}}/api/health
+
+### Config (brains, models, languages)
+GET {{host}}/api/config
+
+### List conversations
+GET {{host}}/api/conversations
+
+### Chat (streams Server-Sent Events)
+POST {{host}}/api/chat
+Content-Type: application/json
+
+{ "message": "Explain closures in JavaScript in 3 sentences.", "brain": "claude", "language": "auto" }
+
+### Search the knowledge base
+GET {{host}}/api/knowledge/search?q=eva

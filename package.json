@@ -1,0 +1,13 @@
+{
+  "name": "eva-android",
+  "version": "4.0.0",
+  "private": true,
+  "description": "Android shell for Eva AI: opens your Eva server and adds native speech recognition + text-to-speech.",
+  "dependencies": {
+    "@capacitor/android": "latest",
+    "@capacitor/cli": "latest",
+    "@capacitor/core": "latest",
+    "@capacitor-community/speech-recognition": "latest",
+    "@capacitor-community/text-to-speech": "latest"
+  }
+}

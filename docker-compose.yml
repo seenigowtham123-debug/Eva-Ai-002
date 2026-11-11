@@ -1,0 +1,14 @@
+services:
+  eva:
+    build: .
+    ports: ["3000:3000"]
+    env_file: .env
+    environment:
+      # Reach Ollama running on your computer (Docker Desktop):
+      OLLAMA_URL: ${OLLAMA_URL:-http://host.docker.internal:11434}
+    volumes:
+      - eva-data:/app/data
+      - ./knowledge:/app/knowledge
+    restart: unless-stopped
+volumes:
+  eva-data:

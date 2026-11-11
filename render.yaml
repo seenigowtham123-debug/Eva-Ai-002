@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: eva-ai
+    runtime: node
+    plan: free
+    buildCommand: npm install --omit=dev
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: BRAIN
+        value: auto
+      # FREE brain: key from https://aistudio.google.com/apikey (paste it in the Render dashboard)
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-2.5-flash
+      # Optional paid brain
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: CLAUDE_MODEL
+        value: claude-sonnet-5-5
+      # Render makes a random password. Read it in Dashboard > Environment, then type it on Eva's unlock screen.
+      - key: ACCESS_TOKEN
+        generateValue: true
+      - key: TRUST_PROXY
+        value: "1"
